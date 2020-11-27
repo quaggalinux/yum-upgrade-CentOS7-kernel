@@ -185,3 +185,19 @@ $su
 查看BIOS时间命令        
 #hwclock        
    
+安装ntpdate工具命令  
+#yum -y install ntp ntpdate  
+  
+停止NTP服务命令  
+#service ntpd stop  
+
+设置系统时间与网络时间同步命令  
+#ntpdate time-a.nist.gov  
+  
+启动NTP服务命令  
+#service ntpd start  
+  
+将系统时间写入BIOS时间  
+#hwclock --systohc  
+
+
